@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+h1 {
+    font-family: 'Instrument Serif', serif;
+    color: rgb(13, 124, 13);
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a;            
+    font-size: 14px;           
+    font-weight: 500;          
+    display: block;            
+    margin-bottom: 1px;        
+    cursor: pointer;           
+}
+
+button {
+    width: 140px;          
+    height: 48px;          
+    border: none;
+    border-radius: 6px;    
+    font-size: 16px;
+    font-weight: 600;      
+    cursor: pointer;       
+    background-color: #e0e0e0;
+    transition: background-color 0.2s; 
+}
+
+input, select, textarea {
+    width: 100%;               
+    max-width: 400px;          
+    padding: 12px;             
+    box-sizing: border-box;    
+    border-radius: 10px;   
+}
+
+button:hover {
+    background-color: #5bd30a;
+}
+
+.container-botoes {
+    display: flex;         /* Mantém os botões lado a lado */
+    justify-content: center; /* Centraliza a dupla de botões */
+    gap: 50px;             /* Cria espaço entre o botão Salvar e Limpar */
+    margin-top: 32px;      /* Aumente esse valor se quiser desgrudar ainda mais! */
+    width: 100%;           
+}
