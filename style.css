@@ -1,50 +1,129 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Fundo escuro oficial do Spotify */
 body {
-    background-color: black;
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    /* Removido o display: flex daqui para não quebrar o menu e o Bootstrap */
+}
+
+
+/* Card centralizado do formulário */
+.conteudo-principal {
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+/* Ícone/Logo acima do título */
+.logo-spotify {
     text-align: center;
+    margin-bottom: 20px;
 }
+.icon-spotify {
+    width: 50px;
+    height: 50px;
+}
+
+/* Título principal */
 h1 {
-    font-family: 'Instrument Serif', serif;
-    color: rgb(13, 124, 13);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
 }
 
-label {
-    font-family: 'Montserrat', sans-serif;
-    color: #4a4a4a;            
-    font-size: 14px;           
-    font-weight: 500;          
-    display: block;            
-    margin-bottom: 1px;        
-    cursor: pointer;           
+/* Estrutura dos blocos de entrada */
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-button {
-    width: 140px;          
-    height: 48px;          
-    border: none;
-    border-radius: 6px;    
-    font-size: 16px;
-    font-weight: 600;      
-    cursor: pointer;       
-    background-color: #e0e0e0;
-    transition: background-color 0.2s; 
+/* Rótulos (Labels) */
+.campo-formulario label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
 }
 
-input, select, textarea {
-    width: 100%;               
-    max-width: 400px;          
-    padding: 12px;             
-    box-sizing: border-box;    
-    border-radius: 10px;   
+/* Inputs e Selects padronizados */
+.campo-formulario input,
+.campo-formulario select {
+    background-color: #242424;
+    border: 1px solid #727272;
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
 }
 
-button:hover {
-    background-color: #5bd30a;
+/* Efeito de foco (quando clica no campo) */
+.campo-formulario input:focus,
+.campo-formulario select:focus {
+    border-color: #ffffff;
 }
 
+/* Placeholder cinza discreto */
+.campo-formulario input::placeholder {
+    color: #757575;
+}
+
+/* Alinhamento dos botões */
 .container-botoes {
-    display: flex;         /* Mantém os botões lado a lado */
-    justify-content: center; /* Centraliza a dupla de botões */
-    gap: 50px;             /* Cria espaço entre o botão Salvar e Limpar */
-    margin-top: 32px;      /* Aumente esse valor se quiser desgrudar ainda mais! */
-    width: 100%;           
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+/* Estilo geral dos botões */
+.container-botoes button {
+    padding: 14px;
+    border-radius: 50px; /* Botões arredondados clássicos */
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+/* Botão Verde Principal (Salvar) */
+.btn-salvar {
+    background-color: #1DB954;
+    color: #000000;
+}
+.btn-salvar:hover {
+    background-color: #1ed760;
+    transform: scale(1.02); /* Efeito de clique do Spotify */
+}
+
+/* Botão Transparente (Limpar) */
+.btn-limpar {
+    background-color: transparent;
+    color: #b3b3b3;
+}
+.btn-limpar:hover {
+    color: #ffffff;
+}
+
+/* Pequeno ajuste para o clique */
+.container-botoes button:active {
+    transform: scale(0.98);
 }
