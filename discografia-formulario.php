@@ -16,7 +16,7 @@
     <main class="conteudo-principal">
  
 
-        <h1>Cadastro de Discografia</h1>
+        <h1 class="titulo">Cadastro de Discografia</h1>
 
         <form action="discografia-salvar.php" method="post">
 

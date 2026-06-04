@@ -19,23 +19,23 @@ include "inc-cabecalho.php";
     <main class="container">
         <h1>Editar Disco: <?= $nome?></h1>
         <form method="post" action="discografia-atualizar.php?id=<?= $id ?>">
-            <div class="mb-3">
+            <div class="mb-2">
                 <label class="form-label">Artista:</label>
                 <input type="text" name="artista" class="form-control" value="<?= $artista ?>">
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
                 <label class="form-label">Nome do álbum:</label>
                 <input type="text" name="nome" class="form-control" value="<?= $nome ?>">
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
                 <label class="form-label">Ano:</label>
                 <input type="number" name="ano" class="form-control" value="<?= $ano ?>">
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
                 <label class="form-label">Foto:</label>
                 <input type="text" name="foto" class="form-control" value="<?= $foto ?>">
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
                 <label class="form-label">Tipo:</label>
                 <select name="tipo" class="form-select">
                     <option value=""></option>
